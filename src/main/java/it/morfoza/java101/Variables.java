@@ -9,7 +9,9 @@ public class Variables {
     static char c1;
     static float f1;
     static double d1;
+
     static boolean bool;
+
     static Object o1;
 
 
@@ -33,6 +35,18 @@ public class Variables {
         char c2 = 0;
         float f2 = 0.0f;
         double d2 = 0.0d;
+
+        long one = 1;
+        l2 = Integer.MAX_VALUE + 1;
+        System.out.println("LONG: " +l2);
+
+
+        i2 = (int) l2;
+
+        System.out.println("INT: " + i2);
+
+        i2 = s2;
+
         boolean bool2 = false;
         Object o2 = null;
 
@@ -89,5 +103,8 @@ public class Variables {
         int znak = 'ć';
         System.out.println(znak);
 
+
+        System.out.println(7.0 / 2);
+        System.out.println(7 % 2);
     }
 }
