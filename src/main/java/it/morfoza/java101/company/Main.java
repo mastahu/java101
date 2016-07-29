@@ -4,16 +4,22 @@ public class Main {
     public static void main(String[] args) {
 
         Company company = new Company();
+        Company company2 = new Company();
 
+        System.out.println(company);
+        System.out.println(company2);
         double totalSalaries = company.calculateTotalSalaries();
-        System.out.println(totalSalaries);
-        System.out.println("CEO salary:" + company.ceo.salary);
-
+        double totalSalaries2 = company2.calculateTotalSalaries();
+        System.out.println("company1 total:" + totalSalaries);
+        System.out.println("company2 total:" + totalSalaries2);
         company.giveRise(100);
-
+        System.out.println("-------- RISE ---------!!!!");
         totalSalaries = company.calculateTotalSalaries();
-        System.out.println(totalSalaries);
+        totalSalaries2 = company2.calculateTotalSalaries();
+        System.out.println("company1 total:" + totalSalaries);
+        System.out.println("company2 total:" + totalSalaries2);
 
-        System.out.println("CEO salary:" + company.ceo.salary);
+        System.out.println(company);
+        System.out.println(company2);
     }
 }
