@@ -1,5 +1,6 @@
 package it.morfoza.java101.containers;
 
+import it.morfoza.java101.pokemon.Pikachu;
 import it.morfoza.java101.pokemon.Pokemon;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ public class ListExample {
 
         ArrayList<Pokemon> lista = new ArrayList<>();
 
-        Pokemon piotrek = new Pokemon("Piotrek", 33);
+        Pokemon piotrek = new Pikachu(33);
 
         lista.add(piotrek);
 
