@@ -1,4 +1,6 @@
-package it.morfoza.java101.wrappers;
+package it.morfoza.java101.wrappers.js;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,7 @@ public class PrimitivesWrappersTest {
         List<Double> a = new ArrayList<>();
         System.out.println(a);
 
-        it.morfoza.java101.wrappers.Double mojDuzyDouble = new Double(1000.17);
+        Double mojDuzyDouble = new Double(1000.17);
         java.lang.Double mojDuzyDouble2 = new java.lang.Double(mojMalyDouble);
 
         System.out.println(mojDuzyDouble);
@@ -25,9 +27,9 @@ public class PrimitivesWrappersTest {
         Object b = new java.lang.Double(123);
         Object c = 123.0;
 
-         double a5 = mojDuzyDouble.getWartosc() + mojDuzyDouble2.doubleValue();
+         double a5 = mojDuzyDouble.doubleValue() + mojDuzyDouble2.doubleValue();
 
-         mojDuzyDouble = new Double(mojDuzyDouble.getWartosc() + 2233434);
+         mojDuzyDouble = new Double(mojDuzyDouble.doubleValue() + 2233434);
 
         double eeee = new java.lang.Double(1111);
         java.lang.Double eee2e =  2.0;
