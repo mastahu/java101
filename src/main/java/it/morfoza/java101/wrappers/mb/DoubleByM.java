@@ -30,6 +30,6 @@ public class DoubleByM {
     }
 
     private static void changeToDouble(double d1) {
-        double duzeD1 = new Double (d1);
+        Double duzeD1 = new Double (d1);
     }
 }
