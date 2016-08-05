@@ -6,6 +6,20 @@ public class Main {
 
         Pokemon pokemon = new Pikachu(100);
         Pokemon pokemon2 = new Charizard(200);
+        Pokemon pokemon3 = new Bulbasaur();
+        Pokemon pokemon4 = null;
+
+        if (jestWtorek()){
+            pokemon = pokemon2;
+        }
+         pokemon2 = pokemon3;
+
+
+        Pikachu pika = new Pikachu(4);
+        pika.metodaTylkoDlaPikaczu();
+
+        pokemon = pika;
+       // pika = pokemon;
 
         System.out.println(pokemon);
         System.out.println(pokemon2);
@@ -48,5 +62,10 @@ public class Main {
             System.out.println(pokemon2 + " is unconscious");
         }
 
+    }
+
+    private static boolean jestWtorek() {
+        // TODO Zrobic
+        return false;
     }
 }
